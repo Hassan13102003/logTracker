@@ -10,74 +10,74 @@ Features
 🕒 cron job to automate the daily execution of the script
 📝 Maintain an archive activity log
 
-⚙️ How It Works
+⚙️ How It Works<br>
 1️⃣ User Configures:
-Log directory (default: /var/log)
-Days to keep logs (default: 7)
-Days to keep backups (default: 30)
+Log directory (default: /var/log)<br>
+Days to keep logs (default: 7)<br>
+Days to keep backups (default: 30)<br>
 
 
-2️⃣ Archiving Process:
-Finds logs older than specified days
-Compresses them into:
-archive/logs_archive_YYYYMMDD_HHMMSS.tar.gz
-Deletes original logs after archiving
-Deletes old backup archives beyond retention limit
+2️⃣ Archiving Process:<br>
+Finds logs older than specified days<br>
+Compresses them into:<br>
+archive/logs_archive_YYYYMMDD_HHMMSS.tar.gz<br>
+Deletes original logs after archiving<br>
+Deletes old backup archives beyond retention limit<br>
 
 📥 Installation
-Clone the repository:
-git clone https://github.com/your-username/log-archiver.git
-cd log-archiver
-Make the script executable:
-chmod u+x log-archive.sh
+Clone the repository:<br>
+git clone https://github.com/your-username/log-archiver.git<br>
+cd log-archiver<br>
+Make the script executable:<br>
+chmod u+x log-archive.sh<br>
 
-▶️ Usage
-Run the script:
-./log-archive.sh
-You will see an interactive menu:
+▶️ Usage<br>
+Run the script:<br>
+./log-archive.sh<br>
+You will see an interactive menu:<br>
 
-1. Specify Log Directory
-2. Specify Number of Days to Keep Logs
-3. Specify Number of Days to Keep Backup Archives
-4. Run Log Archiving Process
-5. Exit
-🕒 Setup Cron Job (Optional)
+1. Specify Log Directory<br>
+2. Specify Number of Days to Keep Logs<br>
+3. Specify Number of Days to Keep Backup Archives<br>
+4. Run Log Archiving Process<br>
+5. Exit<br>
+🕒 Setup Cron Job (Optional)<br>
 
-The script can automatically add itself to cron:
-0 2 * * * /usr/local/bin/log-archive.sh
-This runs daily at 2:00 AM.
+The script can automatically add itself to cron:<br>
+0 2 * * * /usr/local/bin/log-archive.sh<br>
+This runs daily at 2:00 AM.<br>
 
-To manually install:
-sudo mv log-archive.sh /usr/local/bin/
-crontab -e
+To manually install:<br>
+sudo mv log-archive.sh /usr/local/bin/<br>
+crontab -e<br>
 
 Add:
 0 2 * * * /usr/local/bin/log-archive.sh
 
 
-🔍 Technologies Used
-Bash Scripting
-Linux File System Commands
-find
-tar
-cron
-Shell Functions & Case Statements
+🔍 Technologies Used<br>
+Bash Scripting<br>
+Linux File System Commands<br>
+find<br>
+tar<br>
+cron<br>
+Shell Functions & Case Statements<br>
 
 
-🧠 Concepts Demonstrated
-Automation
-Log rotation strategy
-System maintenance scripting
-Production-style cleanup policies
-Cron scheduling
-Safe file handling using -print0
+🧠 Concepts Demonstrated<br>
+Automation<br>
+Log rotation strategy<br>
+System maintenance scripting<br>
+Production-style cleanup policies<br>
+Cron scheduling<br>
+Safe file handling using -print0<br>
 
-🛡 Example Use Case
-This script can be used in:
-Linux servers
-Cloud VM instances
-DevOps environments
-Personal log cleanup automation
-Academic system scripting projects
+🛡 Example Use Case<br>
+This script can be used in:<br>
+Linux servers<br>
+Cloud VM instances<br>
+DevOps environments<br>
+Personal log cleanup automation<br>
+Academic system scripting projects<br>
 
 
